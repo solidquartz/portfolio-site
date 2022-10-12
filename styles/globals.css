@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .heroButton {
+    @apply px-6 py-2 text-sm tracking-widest text-gray-800 transition-all hover:text-gray-300/40
+  }
+}
