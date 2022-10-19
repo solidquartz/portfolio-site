@@ -1,7 +1,7 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import akyprofile from "../images/akyprofile.jpg";
+import akyprofile from "../images/akyprofile2.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,13 +16,13 @@ function Hero({}: Props) {
 
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
-      <BackgroundCircles />
-      <Image
+      {/* <BackgroundCircles /> */}
+      {/* <Image
         priority
         src={akyprofile}
         alt="Image of Aky Mac Donald"
-        className="relative rounded-full h-32 w-32 mx-auo object-cover"
-      />
+        className="relative rounded-full h-32 w-32 mx-auto object-scale-down"
+      /> */}
 
       <div className="z-20">
         <h1 className="text-5xl lg:text-6xl px-10">
