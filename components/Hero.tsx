@@ -1,8 +1,8 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import BackgroundCircles from "./BackgroundCircles";
-import akyprofile from "../images/akyprofile2.jpg";
-import Image from "next/image";
+// import BackgroundCircles from "./BackgroundCircles";
+// import akyprofile from "../images/akyprofile2.jpg";
+// import Image from "next/image";
 import Link from "next/link";
 
 type Props = {};
@@ -24,7 +24,7 @@ function Hero({}: Props) {
         className="relative rounded-full h-32 w-32 mx-auto object-scale-down"
       /> */}
 
-      <div className="z-20">
+      <div className="z-10">
         <h1 className="text-5xl lg:text-6xl px-10">
           <span>{text}</span>
           <Cursor cursorColor="#B985ED" />
