@@ -7,3 +7,4 @@
 - Typescript
 - Tailwind
 - Rough Notation
+- Framer Motion

@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import React from "react";
+import akyprofile from "../images/akyprofile2.jpg";
 
 type Props = {};
 
@@ -9,29 +11,20 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.8 }}
-      className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center z-10">
-      
-      <h3 className="absolute top-24 tracking-[15px] text-gray-500 text-2xl uppercase">
-        about
-      </h3>
-
-      <motion.img
-        initial={{
-          opacity: 0,
-        }}
-        whileInView={{ opacity: 1 }}
-        transition={{
-          duration: 1.5,
-        }}
-        src={"http://placekitten.com/500/600"}
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500] xl:h-[600]"
+      // viewport={{ once: true }}
+      className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center z-10 snap-center"
+    >
+      <Image
+        src={akyprofile}
+        alt="an image of aky"
+        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-56 md:h-56 xl:w-[400] xl:h-[500]"
       />
 
       <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-4xl font-thin">
+        <h3 className="text-4xl font-thin">
           nice to meet you, i'm{" "}
           <span className="underline decoration-purple-300/60">aky</span>
-        </h4>
+        </h3>
         <p className="text-base">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ut
