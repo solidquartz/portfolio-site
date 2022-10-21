@@ -11,7 +11,7 @@ function SkillItem({}: Props) {
         <Image
           src={tailwindicon}
           alt="tailwind css"
-          className="rounded-full border-gray-500 object-cover w-24 h-24 filter hover:grayscale transition duration-1000 ease-in-out"
+          className="rounded-full border-gray-500 object-scale-down filter hover:grayscale transition duration-1000 ease-in-out"
         />
       </div>
       <div className="flex">
