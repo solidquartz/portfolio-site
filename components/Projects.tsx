@@ -10,11 +10,11 @@ function Projects({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.8 }}
-      className="relative flex flex-col text-left align-center mx-auto px-10 z-10 max-w-[400px] md:max-w-[700px] lg:max-w-[1200px]"
+      className="relative flex flex-col text-left items-center mx-auto px-10 z-10 max-w-[400px] md:max-w-[700px] lg:max-w-[1200px]"
     >
-      <div className="flex flex-col max-w-[600px]">
-        <h3 className="text-4xl font-thin py-10">what i've created</h3>
-        <p>
+      <div className="flex flex-col max-w-[600px] justify-center">
+        <h3 className="title">projects i've created</h3>
+        <p className="pb-10">
           I'm always working on something to learn new skills and polish older
           ones. Take a look at what I've written into existence so far,
           including collaborations, solo projects, and freelance commissions. Be
@@ -22,7 +22,7 @@ function Projects({}: Props) {
         </p>
       </div>
 
-      <div className="flex flex-row flex-wrap">
+      <div className="flex flex-row flex-wrap justify-center">
         <ProjectItem />
         <ProjectItem />
         <ProjectItem />

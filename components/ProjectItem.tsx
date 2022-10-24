@@ -1,20 +1,26 @@
 import React from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 import projectplaceholder from '../images/projectplaceholder.jpeg'
 
 type Props = {}
 
 function ProjectItem({}: Props) {
   return (
-    <div className="flex flex-col max-w-[450px]">
+    <div className="flex flex-col max-w-[500px] p-5">
       <div>
-        <h4>Title</h4>
+        <h4 className="text-3xl font-thin tracking-[2px]">Wedding Site</h4>
       </div>
-      <div>
+      <div> 
         <Image src={projectplaceholder} alt="project image" />
       </div>
       <div>
-        <p>Github / Live Site</p>
+        <a href="http://github.com/solidquartz">
+          <button className="heroButton">Github</button>
+        </a>
+        <a href="http://akyandrew2022.com">
+          <button className="heroButton">Live Site</button>
+        </a>
       </div>
       <div>
         <p>
@@ -23,7 +29,9 @@ function ProjectItem({}: Props) {
         </p>
       </div>
       <div>
-        <p>Read Story button</p>
+        <Link href="#">
+          <button className="heroButton">Read Story</button>
+        </Link>
       </div>
     </div>
   );

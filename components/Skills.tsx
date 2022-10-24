@@ -15,7 +15,7 @@ function Skills({}: Props) {
     >
       <div className="px-5 flex flex-col lg:content-start">
         <div>
-          <h3 className="text-4xl font-thin py-10">my skills</h3>
+          <h3 className="title">my skills</h3>
         </div>
         <div className="lg:max-w-[600px]">
           <p>
