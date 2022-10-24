@@ -28,11 +28,11 @@ const Home: NextPage = () => {
         <Skills />
       </section>
 
-      <section id="projects" className="snap-start">
+      <section id="projects" className="snap-center">
         <Projects />
       </section>
 
-      <section id="contact" className="snap-start">
+      <section id="contact" className="snap-center">
         <Contact />
       </section>
 
