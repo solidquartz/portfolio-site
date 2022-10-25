@@ -6,5 +6,5 @@
 - Next.js
 - Typescript
 - Tailwind
-- Rough Notation
+- Rough Notation (coming in v1.1)
 - Framer Motion

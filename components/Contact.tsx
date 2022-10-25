@@ -1,7 +1,8 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
+import { DevicePhoneMobileIcon, AtSymbolIcon } from "@heroicons/react/20/solid";
 
-type Props = {}
+type Props = {};
 
 function Contact({}: Props) {
   return (
@@ -9,14 +10,24 @@ function Contact({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.8 }}
-      className="h-screen relative flex overflow-hidden flex-col text-left lg:flex-row justify-evenly mx-auto items-center px-10 z-10 max-w-[400px] md:max-w-[700px] lg:max-w-[1200px]"
+      className="flex flex-col h-screen relative text-center justify-center mx-auto items-center"
     >
       <div>
-        <h3 className="title">contact me</h3>
-        <p>say hi!</p>
+        <h3 className="title">let's get in touch</h3>
+      </div>
+
+      <div className="space-y-2">
+        <div className="flex items-center justify-center">
+          <DevicePhoneMobileIcon className="h-5 w-5 text-purple-300 animate-pulse hover:animate-bounce" />
+          <p> +1 514 553 3676</p>
+        </div>
+        <div className="flex items-center justify-center">
+          <AtSymbolIcon className="h-5 w-5 text-purple-300 animate-pulse hover:animate-bounce" />
+          <p> akymacd@gmail.com</p>
+        </div>
       </div>
     </motion.div>
   );
 }
 
-export default Contact
+export default Contact;
