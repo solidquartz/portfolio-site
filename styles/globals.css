@@ -9,4 +9,8 @@
   .title {
     @apply text-4xl font-thin py-10
   }
+
+  .input {
+    @apply outline-none border-gray-400 border-b px-3 py-3 text-gray-500 placeholder-gray-400 transition-all focus:border-purple-300/40 focus:text-purple-300
+  }
 }

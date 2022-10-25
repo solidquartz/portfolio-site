@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { DevicePhoneMobileIcon, AtSymbolIcon } from "@heroicons/react/20/solid";
+import { DevicePhoneMobileIcon, AtSymbolIcon, PaperAirplaneIcon } from "@heroicons/react/20/solid";
 
 type Props = {};
 
@@ -13,7 +13,7 @@ function Contact({}: Props) {
       className="flex flex-col h-screen relative text-center justify-center mx-auto items-center"
     >
       <div>
-        <h3 className="title">let's get in touch</h3>
+        <h3 className="title">get in touch</h3>
       </div>
 
       <div className="space-y-2">
@@ -26,6 +26,19 @@ function Contact({}: Props) {
           <p> akymacd@gmail.com</p>
         </div>
       </div>
+
+      <form className="flex flex-col space-y-2 w-fit mx-auto pt-10">
+        <div className="flex space-x-4">
+          <input type="text" className="input" />
+          <input type="text" className="input" />
+        </div>
+
+        <input type="text" className="input" />
+        <textarea className="input" />
+        <button className="heroButton flex items-center justify-center">
+          send
+        </button>
+      </form>
     </motion.div>
   );
 }
