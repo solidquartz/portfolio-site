@@ -2,9 +2,10 @@
 
 [live site coming soon]
 
-## Tech Stack
+## Tech
 - Next.js
 - Typescript
 - Tailwind
-- Rough Notation
+- Rough Notation (coming in v1.1)
 - Framer Motion
+- React Hook Forms
