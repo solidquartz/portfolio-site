@@ -8,14 +8,14 @@ export type SkillItemProps = {
 
 const SkillItem: React.FC<SkillItemProps> = ({ skill }) => {
   return (
-    <div className="flex relative">
+    <div className="flex relative p-3 m-3 justify-center">
         <Image
           src={skill.image}
           alt={skill.alt}
           layout="fill"
-          className="rounded-full border-gray-500 object-scale-down filter hover:grayscale transition duration-1000 ease-in-out"
+          className="h-4 w-4 filter hover:grayscale transition duration-1000 ease-in-out"
         />
-        <h4 className="relative top-10">{skill.name}</h4>
+        <h4 className="relative top-10 pt-2">{skill.name}</h4>
     </div>
   );
 };
