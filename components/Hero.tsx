@@ -1,9 +1,9 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-// import BackgroundCircles from "./BackgroundCircles";
 // import akyprofile from "../images/akyprofile2.jpg";
 // import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -15,7 +15,12 @@ function Hero({}: Props) {
   });
 
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden snap-start">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.8 }}
+      className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden snap-start"
+    >
       {/* <BackgroundCircles /> */}
       {/* <Image
         priority
@@ -50,10 +55,9 @@ function Hero({}: Props) {
           <Link href="#contact">
             <button className="heroButton">contact</button>
           </Link>
-
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
