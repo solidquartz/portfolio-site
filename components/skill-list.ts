@@ -13,6 +13,11 @@ export const skills: Skill[] = [
   {
     name: "React",
     image: '/images/react.svg',
-    alt: "Tailwind",
+    alt: "React",
   },
+  // {
+  //   name: "Next.js",
+  //   image: '/images/nextjs-icon.svg',
+  //   alt: "Next.js",
+  // },
 ]
