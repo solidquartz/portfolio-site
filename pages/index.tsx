@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         <footer className="sticky bottom-1 w-full cursor-pointer">
           <div className="flex items-center justify-end p-10">
             {/* <ArrowSmallUpIcon className="h-5 w-5 animate-pulse hover:animate-bounce" /> */}
-            <p className="tracking-wider font-thin text-md">HOME</p>
+            <p className="tracking-wider font-thin text-md">TOP</p>
           </div>
         </footer>
       </Link>

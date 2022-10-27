@@ -1,24 +1,27 @@
-import Image from 'next/image';
-import React from 'react'
-import tailwindicon from "../images/tailwindcss-icon.svg";
+import Image from "next/image";
+import React from "react";
+import type { Skill } from "./skill-list";
 
-type Props = {}
+export type SkillItemProps = {
+  skill: Skill;
+};
 
-function SkillItem({}: Props) {
+const SkillItem: React.FC<SkillItemProps> = ({ skill }) => {
   return (
-    <div className="group relative flex flex-col items-center">
+    <div>
       <div>
         <Image
-          src={tailwindicon}
-          alt="tailwind css"
+          src={skill.image}
+          alt={skill.alt}
+          layout="fill"
           className="rounded-full border-gray-500 object-scale-down filter hover:grayscale transition duration-1000 ease-in-out"
         />
       </div>
-      <div className="flex">
-        <h4>Tailwind</h4>
+      <div>
+        <h4>{skill.name}</h4>
       </div>
     </div>
   );
-}
+};
 
-export default SkillItem
+export default SkillItem;
