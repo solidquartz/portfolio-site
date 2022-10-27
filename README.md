@@ -8,4 +8,4 @@
 - Tailwind
 - Rough Notation (coming in v1.1)
 - Framer Motion
-- React Hook Forms
+- React Hook Forms (coming in v1.1)
