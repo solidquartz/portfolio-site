@@ -1,10 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { DevicePhoneMobileIcon, AtSymbolIcon, PaperAirplaneIcon } from "@heroicons/react/20/solid";
+// import { useForm, SubmitHandler } from "react-hook-form";
+
+// type Inputs = {
+//   name: string;
+//   email: string;
+//   subject: string;
+//   message: string;
+// };
 
 type Props = {};
 
-function Contact({}: Props) {
+function Contact({ }: Props) {
+  
+  // const {
+  //   register,
+  //   handleSubmit,
+  // } = useForm<Inputs>();
+
+  // const onSubmit: SubmitHandler<Inputs> = (formData) => console.log(formData);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -19,26 +35,53 @@ function Contact({}: Props) {
       <div className="space-y-2">
         <div className="flex items-center justify-center">
           <DevicePhoneMobileIcon className="h-5 w-5 text-purple-300 animate-pulse hover:animate-bounce" />
-          <p> +1 514 553 3676</p>
+          <a href="tel:5145533676"> +1 514 553 3676</a>
         </div>
-        <div className="flex items-center justify-center">
-          <AtSymbolIcon className="h-5 w-5 text-purple-300 animate-pulse hover:animate-bounce" />
-          <p> akymacd@gmail.com</p>
+        <div
+          className="flex items-center justify-center">
+          <AtSymbolIcon
+            className="h-5 w-5 text-purple-300 animate-pulse hover:animate-bounce" />
+          <a href="mailto:akymacd@gmail.com"> akymacd@gmail.com</a>
         </div>
       </div>
 
-      <form className="flex flex-col space-y-2 w-fit mx-auto pt-10">
-        <div className="flex space-x-4">
-          <input type="text" className="input" />
-          <input type="text" className="input" />
+      {/* <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="flex flex-col space-y-2 w-fit mx-auto pt-10"
+      >
+        <div className="flex space-x-2">
+          <input
+            {...register("name")}
+            placeholder="name"
+            type="text"
+            className="input"
+          />
+          <input
+            {...register("email")}
+            placeholder="email address"
+            type="email"
+            className="input"
+          />
         </div>
 
-        <input type="text" className="input" />
-        <textarea className="input" />
-        <button className="heroButton flex items-center justify-center">
+        <input
+          {...register("subject")}
+          placeholder="subject"
+          type="text"
+          className="input"
+        />
+        <textarea
+          {...register("message")}
+          placeholder="message"
+          className="input"
+        />
+        <button
+          type="submit"
+          className="heroButton flex items-center justify-center"
+        >
           send
         </button>
-      </form>
+      </form> */}
     </motion.div>
   );
 }
