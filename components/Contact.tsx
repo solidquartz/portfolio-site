@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { DevicePhoneMobileIcon, AtSymbolIcon, PaperAirplaneIcon } from "@heroicons/react/20/solid";
 // import { useForm, SubmitHandler } from "react-hook-form";
 
-// type Inputs = {
+// type Input = {
 //   name: string;
 //   email: string;
 //   subject: string;
@@ -17,9 +17,9 @@ function Contact({ }: Props) {
   // const {
   //   register,
   //   handleSubmit,
-  // } = useForm<Inputs>();
+  // } = useForm<Input>();
 
-  // const onSubmit: SubmitHandler<Inputs> = (formData) => console.log(formData);
+  // const onSubmit: SubmitHandler<Input> = (formData) => console.log(formData);
 
   return (
     <motion.div

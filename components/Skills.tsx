@@ -1,19 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SkillItem from "./SkillItem";
+import { skills } from './skill-list';
 
 type Props = {};
 
-function Skills({}: Props) {
+const Skills: React.FC<Props> = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.8 }}
       // viewport={{ once: true }}
-      className="h-screen relative flex overflow-hidden flex-col text-center md:text-left justify-evenly mx-auto items-center px-10 z-10 max-w-[550px] md:max-w-[700px] lg:max-w-[1500px] xl:flex-row"
+      className="h-screen relative flex overflow-hidden flex-col text-center md:text-left justify-evenly mx-auto items-center px-10 max-w-[550px] md:max-w-[600px] lg:max-w-[1500px] xl:flex-row"
     >
-      <div className="px-5 flex flex-col lg:content-start">
+      <div className="px-5 flex flex-col">
         <div>
           <h3 className="title">my skills</h3>
         </div>
@@ -29,19 +30,10 @@ function Skills({}: Props) {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-5">
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
-        <SkillItem />
+      <div className="grid grid-cols-4 gap-4">
+        {skills.map((skill) => (
+          <SkillItem key={skill.name} skill={skill} />
+        ))}
       </div>
     </motion.div>
   );
