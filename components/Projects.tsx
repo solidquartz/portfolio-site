@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ProjectItem from "./ProjectItem";
+import { projects } from "./project-list";
 
 type Props = {};
 
@@ -23,10 +24,10 @@ function Projects({}: Props) {
       </div>
 
       <div className="flex flex-row flex-wrap justify-center">
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
+        {projects.map((project) => (
+          <ProjectItem key="{project.name" project={project} />
+        ))}
+
       </div>
     </motion.div>
   );
