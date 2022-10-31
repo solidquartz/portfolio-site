@@ -20,8 +20,8 @@ const Skills: React.FC<Props> = () => {
         </div>
         <div className="lg:max-w-[600px]">
           <p>
-            Thanks to my experience in Lighthouse Labs' intensive web
-            development course, I'm able to quickly pivot to using new
+            Thanks to my experience in Lighthouse Labs&apos; intensive web
+            development course, I&apos;m able to quickly pivot to using new
             technologies and adopt existing codebases on the fly. While my
             skillset is Full Stack, my passion lies in Front End and design.
             Writing code to create something from nothing on the page feels
