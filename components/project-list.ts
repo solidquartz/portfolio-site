@@ -18,7 +18,7 @@ export const projects: Project[] = [
     type: "live site",
     stack: "React TypeScript Sass Chakra .NET C# Formik",
     description:
-      "Created for my own wedding. Features an RSVP system and database to collect data from guests, and an admin dashboard to view guest information. Guests can RSVP for their entire party at once for a convenient user experience. Over 100 real users. Collaboration with mentor",
+      "Created for my own wedding. Features an RSVP system and database to collect data from guests, and an admin dashboard to view guest information. Guests can RSVP for their entire party at once for a convenient user experience. Over 100 real users. Collaboration with a mentor.",
     story:
       "https://github.com/doginasweater/akywedding/blob/development/README.md",
   },
