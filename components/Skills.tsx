@@ -23,7 +23,7 @@ const Skills: React.FC<Props> = () => {
             Thanks to my experience in Lighthouse Labs&apos; intensive web
             development course, I&apos;m able to quickly pivot to using new
             technologies and adopt existing codebases on the fly. While my
-            skillset is Full Stack, my passion lies in Front End and design.
+            skillset is Full Stack, I&apos;m at my best working in the Front End.
             Writing code to create something from nothing on the page feels
             magical and has long been a creative outlet.
           </p>
