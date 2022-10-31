@@ -21,7 +21,7 @@ function About({}: Props) {
 
       <div className="space-y-10 px-0 md:px-10 max-w-[700px]">
         <h3 className="text-4xl font-thin">
-          nice to meet you, i'm{" "}
+          nice to meet you, i&apos;m{" "}
           <span className="underline decoration-purple-300/60">aky</span>
         </h3>
         <p className="text-base">
