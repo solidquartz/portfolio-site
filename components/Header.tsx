@@ -20,11 +20,10 @@ function Header({}: Props) {
           scale: 1,
         }}
         transition={{
-          duration: 1.5,
+          duration: 1.2,
         }}
         className="flex flex-row items-center"
       >
-        {/* Social Icons */}
         <SocialIcon
           url="http://linkedin.com/in/akymacdonald"
           fgColor="gray"
@@ -35,6 +34,13 @@ function Header({}: Props) {
           fgColor="gray"
           bgColor="transparent"
         />
+        <a
+          href="https://resume.creddle.io/resume/4fclbku6z2b"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="heroButton">Resume</button>
+        </a>
       </motion.div>
 
       <motion.div
