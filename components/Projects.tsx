@@ -14,12 +14,12 @@ function Projects({}: Props) {
       className="relative flex flex-col text-left items-center mx-auto px-10 max-w-[400px] md:max-w-[700px] lg:max-w-[1200px]"
     >
       <div className="flex flex-col max-w-[600px] justify-center">
-        <h3 className="title">projects i've created</h3>
+        <h3 className="title">projects i&apos;ve created</h3>
         <p className="pb-10">
-          I'm always working on something to learn new skills and polish older
-          ones. Take a look at what I've written into existence so far,
-          including collaborations, solo projects, and freelance commissions. Be
-          sure to click through to learn more!
+          I&apos;m always working on something to learn new skills and polish
+          older ones. Take a look at what I&apos;ve written into existence so
+          far, including collaborations, solo projects, and freelance
+          commissions. Be sure to click through to learn more!
         </p>
       </div>
 
@@ -27,7 +27,6 @@ function Projects({}: Props) {
         {projects.map((project) => (
           <ProjectItem key="{project.name" project={project} />
         ))}
-
       </div>
     </motion.div>
   );
