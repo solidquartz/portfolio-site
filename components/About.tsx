@@ -25,9 +25,19 @@ function About({}: Props) {
           <span className="underline decoration-purple-300/60">aky</span>
         </h3>
         <p className="text-base">
-          I'm a full stack web developer with a passion for front end and design. I first fell in love with the creative possibilities of the web in the early '00s when I learned HTML from Neopets and saved up for a copy of Photoshop. I took a detour achieving a degree in Linguistics and working as an English as a Second Language Teacher, but now I've returned to my roots. Deciding to change my life to pursue a career where I can learn and grow every day, I'm excited to find out where Web Development can take me. I love problem solving, asking questions, and making something from seemingly nothing.
+          I&apos;m a full stack web developer with a passion for front end and
+          design. I first fell in love with the creative possibilities of the
+          web in the early &apos;00s when I learned HTML from Neopets and saved
+          up for a copy of Photoshop. I took a detour achieving a degree in
+          Linguistics and working as an English as a Second Language Teacher,
+          but now I&apos;ve returned to my roots. Deciding to change my life to
+          pursue a career where I can learn and grow every day, I&apos;m excited
+          to find out where Web Development can take me. I love problem solving,
+          asking questions, and making something from seemingly nothing.
           <p>
-          Outside of coding, I'm a lifelong lover of video games (especially JRPGs!), and I can usually be found crocheting or studying languages (both the human and computer kinds). 
+            Outside of coding, I&apos;m a lifelong lover of video games
+            (especially JRPGs!), and I can usually be found crocheting or
+            studying languages (both the human and computer kinds).
           </p>
         </p>
       </div>
