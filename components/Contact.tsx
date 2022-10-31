@@ -33,10 +33,6 @@ function Contact({ }: Props) {
       </div>
 
       <div className="space-y-2">
-        <div className="flex items-center justify-center">
-          <DevicePhoneMobileIcon className="h-5 w-5 text-purple-300 animate-pulse hover:animate-bounce" />
-          <a href="tel:5145533676"> +1 514 553 3676</a>
-        </div>
         <div
           className="flex items-center justify-center">
           <AtSymbolIcon

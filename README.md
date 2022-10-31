@@ -1,6 +1,6 @@
 # My Web Development Portfolio Website
 
-[live site coming soon]
+(Live Site Here: akymacdonald.me)[http://akymacdonald.me]
 
 ## Tech
 - Next.js
@@ -8,4 +8,3 @@
 - Tailwind
 - Rough Notation (coming in v1.1)
 - Framer Motion
-- React Hook Forms (coming in v1.1)
