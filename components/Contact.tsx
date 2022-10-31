@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { DevicePhoneMobileIcon, AtSymbolIcon, PaperAirplaneIcon } from "@heroicons/react/20/solid";
+import { AtSymbolIcon } from "@heroicons/react/20/solid";
+import { DocumentIcon, BriefcaseIcon } from "@heroicons/react/24/outline";
 // import { useForm, SubmitHandler } from "react-hook-form";
 
 // type Input = {
@@ -12,8 +13,7 @@ import { DevicePhoneMobileIcon, AtSymbolIcon, PaperAirplaneIcon } from "@heroico
 
 type Props = {};
 
-function Contact({ }: Props) {
-  
+function Contact({}: Props) {
   // const {
   //   register,
   //   handleSubmit,
@@ -25,7 +25,7 @@ function Contact({ }: Props) {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.8 }}
+      transition={{ duration: 1.4 }}
       className="flex flex-col h-screen relative text-center justify-center mx-auto items-center"
     >
       <div>
@@ -33,11 +33,34 @@ function Contact({ }: Props) {
       </div>
 
       <div className="space-y-2">
-        <div
-          className="flex items-center justify-center">
-          <AtSymbolIcon
-            className="h-5 w-5 text-purple-300 animate-pulse hover:animate-bounce" />
-          <a href="mailto:akymacd@gmail.com"> akymacd@gmail.com</a>
+        <div className="flex items-center justify-center">
+          <AtSymbolIcon className="h-5 w-5 text-purple-300 animate-pulse hover:animate-bounce" />
+          <a href="mailto:akymacd@gmail.com">
+            {" "}
+            <p>akymacd@gmail.com</p>
+          </a>
+        </div>
+        <div className="flex items-center justify-center">
+          <BriefcaseIcon className="h-5 w-5 text-purple-300 animate-pulse hover:animate-bounce" />
+          <a
+            href="https://www.linkedin.com/in/akymacdonald/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <p>linkedin</p>
+          </a>
+        </div>
+        <div className="flex items-center justify-center">
+          <DocumentIcon className="h-5 w-5 text-purple-300 animate-pulse hover:animate-bounce" />
+          <a
+            href="https://resume.creddle.io/resume/4fclbku6z2b"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <p>cv/resume</p>
+          </a>
         </div>
       </div>
 

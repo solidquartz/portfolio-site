@@ -10,7 +10,7 @@ function Projects({}: Props) {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.8 }}
+      transition={{ duration: 1.4 }}
       className="relative flex flex-col text-left items-center mx-auto px-10 max-w-[400px] md:max-w-[700px] lg:max-w-[1200px]"
     >
       <div className="flex flex-col max-w-[600px] justify-center">

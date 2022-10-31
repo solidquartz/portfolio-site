@@ -10,7 +10,7 @@ const Skills: React.FC<Props> = () => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.8 }}
+      transition={{ duration: 1.4 }}
       // viewport={{ once: true }}
       className="h-screen relative flex overflow-hidden flex-col text-center md:text-left justify-evenly mx-auto items-center px-10 max-w-[550px] md:max-w-[600px] lg:max-w-[1500px] xl:flex-row"
     >

@@ -10,7 +10,7 @@ function About({}: Props) {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.8 }}
+      transition={{ duration: 1.4 }}
       className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-[1100px] px-10 justify-evenly mx-auto items-center snap-center"
     >
       <Image
