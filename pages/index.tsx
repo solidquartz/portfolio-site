@@ -49,7 +49,8 @@ const Home: NextPage = () => {
         </div>
       </footer>
 
-      {/* Note to self: when I'm done, look through framer motion and tailwind to find things I like to add! also use rough notation */}
+
+      
     </div>
   );
 };

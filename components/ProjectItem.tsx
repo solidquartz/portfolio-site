@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import type { Project } from "./project-list";
+import { PHASE_PRODUCTION_BUILD } from "next/dist/shared/lib/constants";
 
 export type ProjectItemProps = {
   project: Project;
@@ -25,25 +26,23 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
         />
       </div>
       <div className="flex justify-center pb-2">
-        <a href={project.github}>
-          <button className="heroButton">Github</button>
+        <a href={project.github} target="_blank" rel="noopener noreferrer">
+          <button className="heroButton">github</button>
         </a>
-        <a href={project.liveSite}>
-          <button className="heroButton">Live Site</button>
+        <a href={project.liveSite} target="_blank" rel="noopener noreferrer">
+          <button className="heroButton">{project.type}</button>
         </a>
       </div>
-      <div className="flex justify-center pb-2 uppercase text-sm tracking-widest text-gray-400">
+      <div className="flex justify-center pb-2 uppercase text-sm tracking-widest text-gray-400 text-center">
         <h5>{project.stack}</h5>
       </div>
       <div className="flex pb-2 justify-center text-center">
-        <p>
-          {project.description}
-        </p>
+        <p>{project.description}</p>
       </div>
       <div className="flex justify-center">
-        <Link href={project.story}>
-          <button className="heroButton">Read Story</button>
-        </Link>
+        <a href={project.story} target="_blank" rel="noopener noreferrer">
+          <button className="heroButton">read more</button>
+        </a>
       </div>
     </div>
   );

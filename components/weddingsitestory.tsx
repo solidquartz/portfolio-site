@@ -5,7 +5,7 @@ type Props = {}
 function weddingsitestory({}: Props) {
   return (
     <>
-      <div>weddingsite-story</div>
+      <div>weddingsite story</div>
       <p>coming soon! please see the readme on github in the meantime.</p>
     </>
   );
